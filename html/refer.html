@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="shortcut icon" href="../logos/BE.ico">
+    <title>Refer a Friend!</title>
+    <style>
+      body {
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      .surveyButtons {
+        display: inline-block;
+        text-align: center;
+        margin-right: 20px;
+      }
+      .surveyButtons label {
+        display: block;
+      }
+      fieldset {
+        padding: 20px;
+        border: none;
+      }
+      textarea {
+        margin-top: 10px;
+        padding: 3px;
+        width: 340px;
+        height: 100px;
+      }
+      .btn {
+        background-color: #da0000;
+        border: none;
+        color: #f1f1f1;
+        padding: 15px 30px;
+        font-size: 14px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .btn:hover {
+	      background: #af0000;
+      }
+
+      .column {
+        float: left;
+        width: 50%;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      legend {
+        font-weight:bold;
+        color:#da0000;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      hr {
+        margin-bottom: 15px;
+      }
+
+      input,textarea {
+        width: 40%;
+        padding: 0.9em;
+        margin-top: 0.5em;
+        margin-bottom: 2em;
+        background-color: rgb(240, 239, 239);
+        border: none;
+        border-radius: 5px;
+      }
+
+    </style>
+  </head>
+
+<body>
+  <header> 
+    <div id="nav-menu">
+        <ul class="one">
+            <li><button><img src="../logos/Hamburger-Button.png" alt="No image" height="30"></button>
+                <ul class="two"> 
+                    <li><a href="./header.php"> Home </a></li>
+                    <li><a href="./account.php"> Account Settings </a></li>
+                    <li><a href="./refer.html"> Refer a Friend </a></li>
+                    <li><a href="./coupon.html"> Coupons </a></li>
+                    <li><a href="./application.html"> Careers </a></li>
+                    <li><a href="./logout.php"> Logout </a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <a href="./header.php"><img src="../logos/logo.png" alt="No image" height="65" id="main-logo"></a>
+    <form id="search-form" action="search.php" method="GET">
+      <input type="search" id="search-bar" name="searchTerm" placeholder="What are you craving?">
+    </form>
+    <input type="button" id="shopping-cart" onclick="window.location.href='./cart.php'">
+  </header>
+  <main>
+      <form action="../html/refersuccess.php" method="POST">
+        <h2>Refer a Friend or Rate your Experience!</h2>
+        <h3>Have you enjoyed your experience with us? Help us out and refer a friend!</h3><br>
+        <hr>
+        <div class="row">
+          <div class="column">
+            <fieldset>
+                <legend>Enter Information Below:</legend>
+                <label class = "about" for="username">*Your Username:</label>
+                <input class = "about" type="text" name="username" id="username" required><br>
+                <label class = "about" for="referencename" type = "referencename">*Reference's Name:</label>
+                <input class = "about"type="text" name="referencename" id="referencename" required><br>
+                <label class = "about" for="referenceemail">*Reference's Email:</label>
+                <input class = "about" type="text" name="referenceemail" id="referenceemail" required><br>
+                Optional message to send to your reference.<br>
+                <textarea name="comments" placeholder=""></textarea>
+          </div>
+          <div class="column">
+            <fieldset>
+                <legend>Rate your experience with us:</legend>
+                How has your experience been?<br>
+                <div id = "surveyButtons">
+                  <div class="surveyButtons">
+                    <input type="radio" name="rate" id="rate1" value="Poor">
+                    <label for="rate1">Poor</label>
+                  </div>
+                  <div class="surveyButtons">
+                    <input type="radio" name="rate" id="rate2" value="ok">
+                    <label  for="rate2">Ok</label>
+                  </div>
+                  <div class="surveyButtons">
+                    <input type="radio" name="rate" id="rate3" value="Average">
+                    <label for="rate3">Average</label>
+                  </div>
+                  <div class="surveyButtons">
+                    <input type="radio" name="rate" id="rate4" value="good">
+                    <label for="rate4">Good</label>
+                  </div>
+                  <div class="surveyButtons">
+                    <input type="radio" name="rate" id="rate5" value="great">
+                    <label for="rate5">Great</label>
+                  </div>
+                </div>
+                <br>
+                We would love to hear why! (optional).<br>
+                <textarea name="comments" placeholder="Why do you feel that way?"></textarea>
+            </fieldset>
+          </div>
+        </div>
+        <div class="row">
+          <fieldset>
+              <input class= "btn" type="submit" id = "button" value="Submit now">
+              <input class= "btn" type="reset" id = "reset" value="Start over">
+          </fieldset>
+        </div>
+      </form>
+  </main>
+</body>
+</html>

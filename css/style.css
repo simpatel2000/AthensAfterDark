@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+  font-family: "Open Sans";
+}
+
+div.couponBorder {
+  width: 30em;
+  border: 1pt solid gray;
+  padding: 1.5em;
+}
+
+.row {
+        display: -ms-flexbox;
+        display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-left: -16px;
+}
+
+.column-xsmall {
+    -ms-flex: 25%;
+    flex: 25%;
+}
+
+.column-small,
+.column2 {
+    -ms-flex: 50%;
+    flex: 50%;
+}
+
+.column1 {
+    -ms-flex: 70%;
+    flex: 70%;
+}
+
+.column1,
+.column2,
+.column-small,
+.column-xsmall {
+    padding: 0 16px;
+}
+
+.container {
+    padding: 20px;
+    border: 1px solid;
+    border-color: lightgrey;
+    margin-top: 2px;
+}
+
+input {
+	margin: 5px;
+}
+
+input.btn:hover {
+	background: #af0000;
+}
+
+input.btn {
+  background-color: #da0000;
+  border: none;
+  color: #f1f1f1;
+  padding: 15px 30px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #da0000;
+  border: none;
+  color: #f1f1f1;
+  padding: 15px 30px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+	background: #af0000;
+}

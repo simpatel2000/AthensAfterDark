@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+    border-bottom: 1px solid silver;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;
+}
+
+/* CSS for the search bar form */
+header #search-form {
+	display: inline;
+	float: right;
+	width: 45%;
+	margin-top: -2.1em;
+	margin-left: 30%;
+}
+
+/* CSS for the navigation menu */
+#nav-menu ul {
+	list-style-type: none;
+}
+#nav-menu li {
+	width: 12%;								/* Changes the width of the menu options */
+	background-color: white;
+}
+#nav-menu a {
+	text-decoration: none;
+	font-size: 95%;
+	font-weight: bold;
+	color: black;
+	display: block;
+	padding: 9%;
+}
+#nav-menu button {
+    margin-top: 2.1em;						/* Changes vertical position of the hamburger button */
+	margin-left: 10%;
+    text-decoration: none;
+	background-color: white;
+	border: none;
+}
+#nav-menu ul li a.current {
+	color: red;
+}
+#nav-menu ul li a:hover {
+    background-color: rgb(240, 239, 239);
+}
+#nav-menu ul.one {
+	position: relative;
+	border: none;
+	margin-top: -1em;						/* Changes the vertical position of the entire header */
+}
+#nav-menu ul.one li {
+	float: left;
+}
+#nav-menu ul.two {
+	display: none;
+	position: absolute;
+	width: 100%;
+}
+#nav-menu ul.one li:hover ul.two {
+	display: block;
+}
+#nav-menu ul.two li {
+	clear: left;
+}
+#nav-menu ul.two li {
+	position: relative;
+}
+
+/* CSS for the Bulldogs logo in the header */
+#main-logo {
+	margin-top: 1.3em;						/* Changes vertical position of everything in the header */
+	margin-left: 25%;						/* except the hamburger button */
+	margin-bottom: -1.8em;					/* Changes vertical position of everything in the header */
+}											/* except the hamburger button and main-logo
+
+/* CSS for the search bar */
+#search-bar {
+	width: 45%;
+	padding: 1em;
+	margin-left: 30%;
+	background-image: url('../logos/Magnifying-Glass.png');
+    background-repeat: no-repeat;
+   	background-position: left;  
+	background-size: 45px 25px;
+	background-color: rgb(240, 239, 239);
+	padding-left: 10px;
+	text-align: center;
+	border: none;
+	border-radius: 20px;
+}
+
+/* CSS for shopping cart button */
+#shopping-cart {
+	width: 5%;
+	padding: 0.95em;
+	margin-top: 0.5em;						/* Seems to change nothing, don't want to break it */
+	margin-bottom: -1.3em;					/* Changes vertical position of shopping cart button alone */
+	margin-left: 40%;						/* 1% */
+	background-image: url('../logos/Shopping-Cart.png');
+    background-repeat: no-repeat;
+   	background-position: center;  
+	background-color: rgb(226, 17, 17);
+	background-size: 50px 31px;
+	border: 1px solid rgb(226, 17, 17);
+	border-radius: 20px;
+}
+
+main {
+	margin-top: 5em;						/* Adjust this to change the vertical position of where */
+}											/* main's content starts */	

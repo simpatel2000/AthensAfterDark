@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../logos/BE.ico">
+  <title>Discount Codes</title>
+  <style>
+    body {
+      margin-left: 50px;
+      margin-top: 100px;
+    }
+    hr {
+      margin-bottom: 10px;
+    }
+    h3 {
+      color: #da0000;
+      margin-bottom: 5px;
+    }
+    .login-svg {
+      float: right;
+      width: 30%;
+      margin-right: 200px;
+      margin-top: 50px;
+    }
+    
+    input,textarea {
+        width: 40%;
+        padding: 0.9em;
+        margin-top: 0.5em;
+        margin-bottom: 2em;
+        background-color: rgb(240, 239, 239);
+        border: none;
+        border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <header> 
+    <div id="nav-menu">
+        <ul class="one">
+            <li><button><img src="../logos/Hamburger-Button.png" alt="No image" height="30"></button>
+                <ul class="two"> 
+                    <li><a href="./header.php"> Home </a></li>
+                    <li><a href="./account.php"> Account Settings </a></li>
+                    <li><a href="./refer.html"> Refer a Friend </a></li>
+                    <li><a href="./coupon.html"> Coupons </a></li>
+                    <li><a href="./application.html"> Careers </a></li>
+                    <li><a href="./logout.php"> Logout </a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <a href="./header.php"><img src="../logos/logo.png" alt="No image" height="65" id="main-logo"></a>
+    <form id="search-form" action="search.php" method="GET">
+      <input type="search" id="search-bar" name="searchTerm" placeholder="What are you craving?">
+    </form>
+    <input type="button" id="shopping-cart" onclick="window.location.href='./cart.php'">
+  </header>
+
+  <img src="../images/account.svg" alt="Login" class="login-svg">
+  <main>
+    <h2>Promo Codes and Discounts for Athens After Dark</h2><br>
+    <div class = "couponBorder">
+      <h3> Discount of the Week: Free Delivery</h3>
+      <p>FREEDELIVERY</p>
+      <hr>
+      <h3> 25% off of first purchase:</h3>
+      <p>25FIRST</p>
+      <hr>
+      <h3> 15% off of pizza:</h3>
+      <p>15PIZZA</p>
+      <hr>
+    </div>
+  </main>
+</body>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="shortcut icon" href="../logos/BE.ico">
+        <title>Become a Driver</title>
+        <style>
+            fieldset{padding:1em;width: 600px;}
+            input, select{margin-bottom:.5em;}
+            main{margin-left: 1em;}
+            body {
+                margin-top: 100px;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            .surveyButtons {
+                display: inline-block;
+                text-align: center;
+                margin-right: 20px;
+            }
+            .surveyButtons label {
+                display: block;
+            }
+
+            fieldset {
+                padding: 20px;
+                border: 1px solid lightgrey;
+            }
+            textarea {
+                margin-top: 10px;
+                padding: 3px;
+                width: 340px;
+                height: 100px;
+            }
+            .btn {
+                background-color: #da0000;
+                border: none;
+                color: #f1f1f1;
+                padding: 15px 30px;
+                font-size: 14px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            .btn:hover {
+                background: #af0000;
+            }
+
+            .column {
+                float: left;
+                width: 50%;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            legend {
+                font-weight:bold;
+                color:#da0000;
+            }
+
+            h2 {
+                margin-bottom: 10px;
+            }
+
+            ul {
+                margin-left: 20px;
+            }
+
+            hr {
+                margin-bottom: 15px;
+            }
+            .row {
+                display: flex;
+            }
+
+            .column1 {
+                flex: 50%;
+            }
+            .column2 {
+                flex: 30%;
+            }
+            .app-svg {
+                margin-bottom: 20px;
+                width: 70%;
+            }
+            input,textarea {
+                width: 40%;
+                padding: 0.7em;
+                margin-top: 0.4em;
+                margin-bottom: 1em;
+                background-color: rgb(240, 239, 239);
+                border: none;
+                border-radius: 5px;
+            }
+        </style>
+      </head>
+      
+    <body>
+        <header> 
+            <div id="nav-menu">
+                <ul class="one">
+                    <li><button><img src="../logos/Hamburger-Button.png" alt="No image" height="30"></button>
+                        <ul class="two"> 
+                            <li><a href="./header.php"> Home </a></li>
+                            <li><a href="./account.php"> Account Settings </a></li>
+                            <li><a href="./refer.html"> Refer a Friend </a></li>
+                            <li><a href="./coupon.html"> Coupons </a></li>
+                            <li><a href="./application.html"> Careers </a></li>
+                            <li><a href="./logout.php"> Logout </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a href="./header.php"><img src="../logos/logo.png" alt="No image" height="65" id="main-logo"></a>
+            <form id="search-form" action="search.php" method="GET">
+                <input type="search" id="search-bar" name="searchTerm" placeholder="What are you craving?">
+            </form>
+            <input type="button" id="shopping-cart" onclick="window.location.href='./cart.php'">
+          </header>
+
+        <main>
+            <h2>Join Our Athens After Dark Team!</h2>
+                <h2>Apply Now!</h2>
+                <div class="row">
+                <div class="column1">    
+                    <form action="../html/applicationsuccess.php" method="POST">
+                        <fieldset id="info">
+                            <legend> Personal Information </legend>
+                            <label for="name"> *First Name: </label>
+                            <input type= "text" id= "firstname" required><br>
+                            <label for="name"> *Last Name: </label>
+                            <input type= "text" id= "lastname" required><br>
+                            <label for="dob"> *Date of Birth: </label>
+                            <input type= "text" id= "dob" placeholder="00/00/0000" required><br>
+                        </fieldset>
+                        <fieldset id="contact">
+                            <legend> Contact Information </legend>
+                            <label for="email"> *E-mail: </label>
+                            <input type= "email" name="email" id="email" required><br>
+                            <select name= "phoneType">
+                                <option value= ""> Type of Phone</option>
+                                <option value="mobile">Mobile</option>
+                                    <option value="home">Home</option>
+                                    <option value="work">Work</option>
+                                </select><br>
+                            <label for= "phone">*Phone Number</label>
+                            <input type= "tel" name="phone" id="phone" placeholder="000-000-0000" required pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 000-000-0000"><br>
+                            <!-- <label for="checkbox">Would you Like to subscribe to updates via text?</label><br>
+                            <input type="checkbox" id="updates" value="subscribe">
+                            <label for="updates">Yes, Subscribe</label><br>-->
+                        </fieldset>
+                        <fieldset id="address">
+                            <legend>Residence Near Athens</legend>
+                            <label for="address">Street: </label>
+                            <input type="text" id="street" ><br>
+                            <label for="address">City: </label>
+                            <input type="text" id="city" ><br>
+                            <label for="address">Zip code: </label>
+                            <input type="text" id="address" ><br>
+                            <label for="address">State: </label>
+                            <input type="text" id="state" value="GA"><br>
+                        </fieldset>
+                        <fieldset>
+                                <legend>Identification </legend>
+                                <label for="address">Driver's License Number: </label>
+                                <input type="text" id="license" ><br>
+                        </fieldset>
+                        <fieldset id="process">
+                            <legend>Submit your information</legend>
+                            <label for="referall">Referall Code: </label>
+                            <input type="text" id="referall" placeholder="Optional"> <br><br>
+                            <input type="submit" id="button" value="Submit" class="btn">
+                            <input type="reset" id="button" value="Start Over" class="btn">
+                    </fieldset>
+                    </form>
+                    <br><br>
+                </div>
+
+                <div class="column2">
+                    <img src="../images/application.svg" alt="Application" class="app-svg">
+                    <h3>Why work for Athens After Dark? </h3>
+                    <ul class= "reasons">
+                        <li>Choose Your Own Hours</li>
+                        <li>Start Right Away</li>
+                        <li>Take Home 100% of Your Earnings</li>
+                        <li>Instant Deposits</li>
+                    </ul>
+                </div>
+
+            </div>
+        </main>
+    </body>
