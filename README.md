@@ -1,4 +1,5 @@
 # Final Project for Web Programming
+Athens After Dark is a website for late-night food delivery in the Athens, GA area. The entirety of the website has been implemented using HTML, CSS, Javascript, PHP, and MySQL. Users, Products, Restaurants, Carts, and Payment and Billing Info is all stored in a database on phpMyAdmin.
 
 ## Demo Photos 
 
