@@ -6,5 +6,5 @@ Notes about Github for team:
 
 Use localhost:8080 through Xampp and use the pathname of files - make sure repository is cloned in htdocs
 
-ex url: http://localhost:8080/CSCI4300-FinalProject/html/login.php
-
+example url to run: http://localhost:8080/CSCI4300-FinalProject/html/login.php
+(note: this will not run without the server) 
