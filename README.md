@@ -1,6 +1,6 @@
 # Final Project for Web Programming
 
-# Demo Photos 
+## Demo Photos 
 
 Demo photos of the site can be found under the DemoPhotos folder
 
