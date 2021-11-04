@@ -1,6 +1,8 @@
 # Final Project for Web Programming
 
-Notes about Github for team:
+# Demo Photos 
+
+Demo photos of the site can be found under the DemoPhotos folder
 
 ## Running the Site
 
